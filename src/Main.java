@@ -32,15 +32,16 @@ public class Main {
                 case '/':
                     if (b != 0) {
                         result = a / b;
-                        break;
                     } else {
                         System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없어 종료됩니다.");
                     }
+                    break;
                 default:
                     System.out.println("연산자가 잘못되었습니다");
                             flag = false;
 
             }
+
             System.out.println("결과: " + result);
 
             System.out.println("더 계산하려면 아무키나 눌러주세요.(exit 입력 시 종료)");
