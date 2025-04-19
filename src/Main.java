@@ -17,6 +17,7 @@ public class Main {
             char op = scanner.next().charAt(0);
 
             int result = 0;
+            boolean flag = false;
 
             switch (op) {
                 case '+':
@@ -31,10 +32,14 @@ public class Main {
                 case '/':
                     if (b != 0) {
                         result = a / b;
+                        break;
                     } else {
                         System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없어 종료됩니다.");
-                        break;
                     }
+                default:
+                    System.out.println("연산자가 잘못되었습니다");
+                            flag = false;
+
             }
             System.out.println("결과: " + result);
 
